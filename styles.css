@@ -1,0 +1,32 @@
+body {
+  font-size: 26px;
+  background-color: #d9d9d9;
+}
+
+nav {
+}
+
+ul {
+  color: blue;
+  display: inline-flex;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  justify-content: end;
+  background-color: #ffe6e6;
+}
+li {
+  padding: 0 15px;
+}
+li:first-of-type {
+  color: chartreuse;
+  margin-right: auto; /* aligns LOGO item to the left */
+}
+
+.main-container {
+  border: 1px solid black;
+  width: 80%;
+  height: 1000px;
+  margin: 160px;
+}

@@ -3,11 +3,7 @@ body {
   background-color: #d9d9d9;
 }
 
-nav {
-}
-
 ul {
-  color: blue;
   display: inline-flex;
   list-style-type: none;
   position: fixed;
@@ -20,7 +16,6 @@ li {
   padding: 0 15px;
 }
 li:first-of-type {
-  color: chartreuse;
   margin-right: auto; /* aligns LOGO item to the left */
 }
 
@@ -28,5 +23,119 @@ li:first-of-type {
   border: 1px solid black;
   width: 80%;
   height: 1000px;
-  margin: 160px;
+  margin: 50px;
+}
+
+/* citation*/
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.ciao-frames {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+}
+.frame {
+  width: 400px;
+  height: 200px;
+  margin: 2px;
+  display: block;
+  /* border: 1px solid white; */
+  background: transparent
+    url("https://assets.codepen.io/219932/ciao-frames.png") 0 0 no-repeat;
+}
+#one {
+  -webkit-animation: letterC 1s steps(12) infinite;
+  animation: letterC 1s steps(12) infinite;
+}
+#two {
+  -webkit-animation: letterI 1s steps(12) infinite;
+  animation: letterI 1s steps(12) infinite;
+}
+#three {
+  -webkit-animation: letterA 1s steps(12) infinite;
+  animation: letterA 1s steps(12) infinite;
+}
+#four {
+  -webkit-animation: letterO 1s steps(12) infinite;
+  animation: letterO 1s steps(12) infinite;
+}
+@-webkit-keyframes letterC {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2400px;
+  }
+}
+@keyframes letterC {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2400px;
+  }
+}
+@-webkit-keyframes letterI {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: -400px -2400px;
+  }
+}
+@keyframes letterI {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: -400px -2400px;
+  }
+}
+@-webkit-keyframes letterA {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: -800px -2400px;
+  }
+}
+@keyframes letterA {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: -800px -2400px;
+  }
+}
+
+@-webkit-keyframes letterO {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: -1200px -2400px;
+  }
+}
+
+@keyframes letterO {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: -1200px -2400px;
+  }
 }

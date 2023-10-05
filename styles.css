@@ -1,8 +1,26 @@
 body {
-  font-size: 26px;
+  font-size: 40px;
   background-color: #d9d9d9;
+  font-family: "Croissant One", cursive;
 }
-
+/* 
+font-family: 'Meddon', cursive;
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'Fondamento', cursive;
+font-family: 'Grandiflora One', serif;
+font-family: "Kalam", cursive;
+font-family: "Luckiest Guy", cursive;
+*/
+h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Dawning of a New Day", cursive;
+}
+h3 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 80px;
+  margin: 0 auto;
+}
 ul {
   display: inline-flex;
   list-style-type: none;
@@ -10,10 +28,15 @@ ul {
   top: 0;
   width: 90%;
   justify-content: end;
-  background-color: #ffe6e6;
+  background-color: #fbd1d1;
+  font-family: "Dawning of a New Day", cursive;
 }
 li {
-  padding: 0 15px;
+  padding: 5px 20px;
+}
+li:hover {
+  font-size: 47px;
+  cursor: pointer;
 }
 li:first-of-type {
   margin-right: auto; /* aligns LOGO item to the left */
@@ -22,15 +45,27 @@ li:first-of-type {
 .main-container {
   border: 1px solid black;
   width: 80%;
-  height: 1000px;
+  height: 100vh;
   margin: 50px;
 }
 
-/* citation*/
+.slide {
+  background-image: url("/img/colorful-notes.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
+/* citation*/
+.hero {
+  height: 100vh;
+}
 .wrapper {
   width: 100%;
-  min-height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

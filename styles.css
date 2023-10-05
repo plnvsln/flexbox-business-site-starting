@@ -187,3 +187,7 @@ li:first-of-type {
     background-position: -1200px -2400px;
   }
 }
+
+footer {
+  background-color: aliceblue;
+}

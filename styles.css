@@ -28,9 +28,11 @@ ul {
   top: 0;
   width: 90%;
   justify-content: end;
-  background-color: #fbd1d1;
+  background-color: #dce3f9;
   font-family: "Dawning of a New Day", cursive;
+  z-index: 1;
 }
+
 li {
   padding: 5px 20px;
 }
@@ -41,15 +43,26 @@ li:hover {
 li:first-of-type {
   margin-right: auto; /* aligns LOGO item to the left */
 }
-
+/*
 .main-container {
   border: 1px solid black;
   width: 80%;
   height: 100vh;
   margin: 50px;
 }
-
+*/
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
 .slide {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.slide2 {
   background-image: url("/img/colorful-notes.jpeg");
   background-repeat: repeat;
   background-size: cover;
@@ -59,10 +72,10 @@ li:first-of-type {
   align-items: center;
 }
 
-/* citation*/
-.hero {
+/* .hero {
   height: 100vh;
-}
+}   */
+
 .wrapper {
   width: 100%;
   height: 80vh;

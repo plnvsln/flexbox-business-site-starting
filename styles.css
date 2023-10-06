@@ -1,5 +1,4 @@
 body {
-  font-size: 40px;
   background-color: #d9d9d9;
   font-family: "Croissant One", cursive;
 }
@@ -16,12 +15,23 @@ h2 {
   font-size: 60px;
   font-family: "Dawning of a New Day", cursive;
 }
+
+@media only screen and (max-width: 480px) {
+  .slide {
+    width: 100%;
+    height: 80vh;
+  }
+  h2 {
+    font-size: 70px;
+  }
+}
 h3 {
   font-family: "Luckiest Guy", cursive;
   font-size: 80px;
   margin: 0 auto;
 }
 ul {
+  font-size: 40px;
   display: inline-flex;
   list-style-type: none;
   position: fixed;
@@ -86,13 +96,27 @@ li:first-of-type {
 }
 .hero {
   height: 100vh;
-}   */
+}   
 
-button {
-  padding: 20px 30px;
-  border: 1px solid red;
+  */
+
+.shop-button {
+  text-decoration: none;
+  color: black;
+  padding: 30px 30px;
+  border: 1px solid black;
+  border-radius: 55px;
+  margin-top: 20px;
   font-size: 40px;
+  background-color: rgb(155, 188, 255);
 }
+.shop-button:hover {
+  cursor: pointer;
+
+  border: 1px solid yellow;
+  box-shadow: 0px 0px 30px 20px yellow;
+}
+
 .wrapper {
   width: 100%;
   height: 80vh;
@@ -205,7 +229,24 @@ button {
   }
 }
 
-.footer {
-  background-color: aliceblue;
-  margin: 50px auto;
+footer {
+  text-align: center;
+}
+footer img {
+  width: 10%;
+
+  margin: 40px 15px;
+
+  border-radius: 50%;
+}
+footer img:hover {
+  cursor: pointer;
+  box-shadow: 20px 20px rgb(207, 191, 255);
+}
+/* shop page */
+.shop-container {
+  margin: 150px auto;
+}
+p {
+  font-size: 30px;
 }

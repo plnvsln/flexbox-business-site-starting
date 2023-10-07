@@ -60,25 +60,19 @@ li:hover {
 li:first-of-type {
   margin-right: auto; /* aligns LOGO item to the left */
 }
-/*
-.main-container {
-  border: 1px solid black;
-  width: 80%;
-  height: 100vh;
-  margin: 50px;
-}
-*/
+
 .container {
   width: 100%;
   height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll;
+  scroll-snap-type: y mandatory; */
 }
 .slide {
   width: 100%;
   height: 100vh;
-  scroll-snap-align: start;
+  /*  scroll-snap-align: start; */
 }
+
 .slide2 {
   background-image: url("/img/colorful-notes.jpeg");
   background-repeat: repeat;
@@ -249,4 +243,52 @@ footer img:hover {
 }
 p {
   font-size: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template: 1fr 2fr 2fr / repeat(3, 3fr);
+  align-items: center;
+  max-height: 90vh;
+}
+
+.box img {
+  width: 80%;
+}
+.heading-grid {
+  grid-column: 1 / span 3;
+  justify-content: center;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+
+  max-height: 90vh;
+}
+.worker {
+  text-align: center;
+}
+.worker img {
+  width: 40%;
+}
+
+.contact {
+  text-align: center;
+}
+.contact a {
+  padding: 10px 20px;
+}
+.contact img {
+  border: #6d7eb5 1px solid;
+  border-radius: 50%;
+}
+.contact img:hover {
+  cursor: pointer;
+  box-shadow: 30px 20px;
+  color: #d3aaff;
+}
+
+h1 {
+  text-align: center;
 }
